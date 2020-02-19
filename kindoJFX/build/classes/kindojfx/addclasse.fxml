@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="kindojfx.AddclasseController">
+   <children>
+      <TextField fx:id="tfclass" layoutX="184.0" layoutY="144.0" onAction="#add" prefHeight="25.0" prefWidth="336.0" promptText="Class Name" />
+      <TextField fx:id="tflevel" layoutX="184.0" layoutY="232.0" prefHeight="25.0" prefWidth="336.0" promptText="level" />
+      <TextField fx:id="tfcapacity" layoutX="184.0" layoutY="189.0" prefHeight="25.0" prefWidth="336.0" promptText="Capacity" />
+      <HBox layoutX="182.0" layoutY="336.0" prefHeight="38.0" prefWidth="213.0">
+         <children>
+            <Button fx:id="btnSave" mnemonicParsing="false" onAction="#add" prefHeight="38.0" prefWidth="102.0" text="Save" />
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="111.0" style="-fx-background-color: #ff8533;" text="Cancel" />
+         </children>
+      </HBox>
+      <Label layoutX="74.0" layoutY="146.0" prefHeight="22.0" prefWidth="88.0" text="Class Name">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="189.0" prefHeight="22.0" prefWidth="88.0" text="Capacity">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="234.0" prefHeight="22.0" prefWidth="88.0" text="level">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

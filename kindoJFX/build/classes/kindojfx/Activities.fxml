@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="637.0" prefWidth="701.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="kindojfx.ActivitiesController">
+   <children>
+      <AnchorPane prefHeight="637.0" prefWidth="314.0" style="-fx-background-color: pink;">
+         <children>
+            <Button fx:id="btnAdd" layoutX="14.0" layoutY="493.0" mnemonicParsing="false" onAction="#Add" prefHeight="25.0" prefWidth="81.0" text="Add">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDelete" layoutX="203.0" layoutY="493.0" mnemonicParsing="false" onAction="#Delete" prefHeight="27.0" prefWidth="81.0" text="Delete">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpdate" layoutX="107.0" layoutY="493.0" mnemonicParsing="false" onAction="#Update" prefHeight="27.0" prefWidth="81.0" text="Update">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="112.0" layoutY="559.0" mnemonicParsing="false" onAction="#Reset" prefHeight="27.0" prefWidth="81.0" text="Reset">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="12.0" layoutY="240.0" prefHeight="22.0" prefWidth="139.0" text="Activity Title">
+               <font>
+                  <Font name="Calibri" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="354.0" prefHeight="22.0" prefWidth="163.0" text="Hour Begin">
+               <font>
+                  <Font name="Calibri" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="293.0" prefHeight="22.0" prefWidth="139.0" text="Description">
+               <font>
+                  <Font name="Calibri" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfAct" layoutX="11.0" layoutY="262.0" prefHeight="25.0" prefWidth="273.0" promptText="Class Title" />
+            <TextField fx:id="tfdesc" layoutX="11.0" layoutY="318.0" prefHeight="25.0" prefWidth="273.0" promptText="Description" />
+            <TextField fx:id="tflbegin" layoutX="11.0" layoutY="376.0" prefHeight="25.0" prefWidth="273.0" promptText="Hour Begin" />
+            <ImageView fitHeight="64.0" fitWidth="149.0" layoutX="76.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: blue;">
+               <image>
+                  <Image url="@../../../../../Desktop/Sans%20titre.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="13.0" layoutY="185.0" prefHeight="22.0" prefWidth="139.0" text="Activity Id">
+               <font>
+                  <Font name="Calibri" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfid" layoutX="11.0" layoutY="207.0" prefHeight="25.0" prefWidth="273.0" promptText="Activity Id" />
+            <Label layoutX="12.0" layoutY="415.0" prefHeight="22.0" prefWidth="163.0" text="Hour End">
+               <font>
+                  <Font name="Calibri" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfend" editable="false" layoutX="11.0" layoutY="437.0" prefHeight="25.0" prefWidth="273.0" promptText="Hour End" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tabact" layoutX="314.0" layoutY="134.0" onMouseClicked="#handleRowSelect" prefHeight="504.0" prefWidth="387.0">
+        <columns>
+            <TableColumn fx:id="cltitle" prefWidth="88.0" text="Title" />
+            <TableColumn fx:id="cldesc" prefWidth="137.0" text="Description" />
+            <TableColumn fx:id="clbegin" prefWidth="78.0" text="Hour Begin" />
+            <TableColumn fx:id="clend" prefWidth="83.0" text="Hour End" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfsearch" layoutX="357.0" layoutY="58.0" onAction="#Search" prefHeight="34.0" prefWidth="301.0" promptText=" Search..." style="-fx-background-color: white; -fx-border-color: orange;" />
+   </children>
+</AnchorPane>
