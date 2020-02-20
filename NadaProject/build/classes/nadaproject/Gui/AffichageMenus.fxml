@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nadaproject.Gui.AffichageMenusController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="601.0" opacity="0.59">
+         <image>
+            <Image url="@backprinc.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="293.0" fitWidth="209.0" layoutX="385.0" layoutY="54.0" opacity="0.84">
+         <image>
+            <Image url="file:/C:/Users/nada/Documents/NetBeansProjects/NadaProject/src/nadaproject/Gui/orangebck.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="TableMenus" layoutX="4.0" layoutY="72.0" prefHeight="257.0" prefWidth="374.0">
+        <columns>
+          <TableColumn fx:id="DateC" prefWidth="96.0" text="Date" />
+            <TableColumn fx:id="P1C" prefWidth="83.0" text="Plate 1" />
+            <TableColumn fx:id="P2C" prefWidth="90.0" text="Plate 2" />
+            <TableColumn fx:id="P3C" prefWidth="104.0" text="Plate 3" />
+        </columns>
+      </TableView>
+      <Text fill="#f74802" layoutX="70.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WHAT WE HAVE THIS WEEK">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Button layoutX="314.0" layoutY="346.0" mnemonicParsing="false" style="-fx-background-color: #f74802;" text="Return" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="commentbox" layoutX="392.0" layoutY="84.0" prefHeight="195.0" prefWidth="196.0" text="We are open to your comments&#10;and recommendations!" />
+      <Button fx:id="sendcombtn" layoutX="443.0" layoutY="298.0" mnemonicParsing="false" style="-fx-background-color: #34058c;" text="Send Comment" textFill="WHITE" />
+      <ImageView fitHeight="45.0" fitWidth="73.0" layoutX="514.0" layoutY="6.0">
+         <image>
+            <Image url="file:/C:/Users/nada/Documents/NetBeansProjects/NadaProject/src/nadaproject/Gui/final%20logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
