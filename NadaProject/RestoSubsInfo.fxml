@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="nadaproject.Gui.RestoSubsInfoController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.59">
+         <image>
+            <Image url="@backprinc.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#1600dd" layoutX="27.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your  child's subscription informations">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TableView layoutX="14.0" layoutY="70.0" prefHeight="154.0" prefWidth="337.0">
+        <columns>
+          <TableColumn prefWidth="169.0" text="Subscription's start date" />
+          <TableColumn prefWidth="167.0" text="Subscription's end date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
