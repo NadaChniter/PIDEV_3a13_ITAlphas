@@ -43,11 +43,11 @@
       </Label>
       <Button fx:id="add" layoutX="489.0" layoutY="350.0" mnemonicParsing="false" onAction="#add" prefHeight="36.0" prefWidth="97.0" text="Add" />
       <DatePicker fx:id="date" layoutX="262.0" layoutY="171.0" prefHeight="25.0" prefWidth="149.0" />
-      <TextField fx:id="tfname" blendMode="SRC_ATOP" cache="true" cacheHint="SPEED" layoutX="262.0" layoutY="89.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.29" pickOnBounds="false" text="Name" />
-      <TextField fx:id="descripition" layoutX="262.0" layoutY="128.0" text="Description" />
-      <TextField fx:id="capacity" layoutX="262.0" layoutY="297.0" text="Capacity" />
-      <TextField fx:id="hour_begin" layoutX="262.0" layoutY="213.0" text="hh:mm:ss" />
-      <TextField fx:id="hour_end" layoutX="262.0" layoutY="257.0" text="hh:mm::ss" />
+      <TextField fx:id="tfname" blendMode="SRC_ATOP" cache="true" cacheHint="SPEED" layoutX="262.0" layoutY="89.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.29" pickOnBounds="false" promptText="Name" />
+      <TextField fx:id="descripition" layoutX="262.0" layoutY="128.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.29" promptText="Description" />
+      <TextField fx:id="capacity" layoutX="262.0" layoutY="297.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.29" promptText="Capacity" />
+      <TextField fx:id="hour_begin" layoutX="262.0" layoutY="213.0" opacity="0.29" promptText="Hour begin" />
+      <TextField fx:id="hour_end" layoutX="262.0" layoutY="257.0" opacity="0.29" promptText="Hour end" />
       <AnchorPane prefHeight="57.0" prefWidth="600.0">
          <children>
             <ImageView fitHeight="65.0" fitWidth="106.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true">

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="561.0" prefWidth="749.0" style="-fx-background-color: BLANCHEDALMOND;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kindooo.AddParticipationController">
+   <children>
+      <ImageView fitHeight="299.0" fitWidth="750.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../kindo/Image/background.jpeg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="92.0" layoutY="146.0" prefHeight="354.0" prefWidth="568.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="description" prefWidth="92.0" text="Description" />
+            <TableColumn fx:id="date" prefWidth="96.0" text="Date" />
+            <TableColumn fx:id="hour_begin" prefWidth="97.0" text="Hour begin" />
+            <TableColumn fx:id="hour_end" prefWidth="77.0" text="Hour end" />
+            <TableColumn fx:id="capacity" prefWidth="130.0" text="Capacity" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="68.0" fitWidth="164.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../kindo/Image/KINDO.png" />
+         </image>
+      </ImageView>
+      <Button blendMode="DIFFERENCE" layoutX="92.0" layoutY="513.0" mnemonicParsing="false" text="Participate" />
+      <Button blendMode="EXCLUSION" layoutX="188.0" layoutY="513.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Cancel" />
+   </children>
+</AnchorPane>
